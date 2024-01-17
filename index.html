@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>Tabla de Información</title>
   <!-- Agrega los enlaces a los estilos de Bootstrap -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <style>
     /* Estilos adicionales para la tabla y centrado */
     body {
@@ -15,50 +17,56 @@
       height: 100vh;
       background-color: #2f97ff;
     }
+
     table {
       margin-top: 20px;
     }
-    th, td {
+
+    th,
+    td {
       color: #d3fa25;
     }
   </style>
 </head>
+
 <body>
 
-<div class="container">
-  <h1 class="text-center mt-4 mb-4">Tabla de Información</h1>
+  <div class="container">
+    <h1 class="text-center mt-4 mb-4">Tabla de Información</h1>
 
-  <table class="table table-dark">
-    <thead>
-      <tr>
-        <th scope="col">IP</th>
-        <th scope="col">País</th>
-        <th scope="col">Continente</th>
-        <th scope="col">Zona Horaria</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <th scope="row">192.168.1.1</th>
-        <td>EE. UU.</td>
-        <td>América del Norte</td>
-        <td>GMT-5</td>
-      </tr>
-      <tr>
-        <th scope="row">203.0.113.0</th>
-        <td>Canadá</td>
-        <td>América del Norte</td>
-        <td>GMT-4</td>
-      </tr>
-      <!-- Puedes agregar más filas con datos de muestra según sea necesario -->
-    </tbody>
-  </table>
+    <table class="table table-dark">
+      <thead>
+        <tr>
+          <th>IP</th>
+          <th>País</th>
+          <th>Continente</th>
+          <th>Zona Horaria</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td id="ip">Ejemplo</td>
+          <td id="pais">Ejemplo</td>
+          <td id="continente">Ejemplo</td>
+          <td id="zona_horaria">Ejemplo</td>
+        </tr>
+        <!-- Puedes agregar más filas con datos de muestra según sea necesario -->
+      </tbody>
+    </table>
 
-</div>
+  </div>
 
-<!-- Agrega los scripts de Bootstrap y jQuery -->
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <!-- Agrega los scripts de Bootstrap y jQuery -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="js/main.js"> </script>
 
 </body>
+
 </html>
